@@ -53,12 +53,21 @@ function createCard (data) {
     <li><b>Origin: </b>${data.origin.name}</li>
     <li><b>Episodes: </b>${data.episode.length}</li>
     `
-
-    container.appendChild(card)
     card.appendChild(image)
     card.appendChild(name)
     card.appendChild(profile)
+    container.appendChild(card)
+  
 
 
 }
+const nextpage = document.createElement('p')
+nextpage.innerHTML=`<button onclick=lie()>NextPage</button>`
+root.appendChild(nextpage)
 
+
+function lie() {
+
+    alert('the cake is a lie')
+    alert('Sorry, we have a 671 characters, i will do it soon...')
+}
